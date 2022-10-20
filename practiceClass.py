@@ -30,11 +30,13 @@ class Play:
     def get_status(self):
         return self.__show_status
 
+    def set_status(self):
+        self.__show_status = False
+
     def num_seats_left(self):
         self.__show_seats -=1
 
-    def set_status(self):
-        self.__show_status = False
+    
 
 class Booking: 
     def __init__(self,name,seat_number):
